@@ -1,0 +1,110 @@
+:root {
+  /* Typography Scale */
+  --t-1: 0.9rem;
+  --t-2: 1.4rem;
+
+  /* Spacing Scale */
+  --s-1: 1rem;
+  --s-2: 1.5rem;
+  --s-3: 2.5rem;
+
+  /* Line Height Scale */
+  --lh-1: 1.2;
+  --lh-2: 1.4;
+
+  /* Letter Spacing Scale */
+  --ls-1: 0px;
+  --ls-2: 0.2px;
+
+  /* Font Weight Scale */
+  --fw-1: 400;
+  --fw-2: 700;
+
+  /* ----- Typography ----- */
+  --text-sm: var(--t-1);
+  --text-md: var(--t-2);
+
+  --line-height-sm: var(--lh-1);
+  --line-height-md: var(--lh-2);
+
+  --letter-spacing-sm: var(--ls-1);
+  --letter-spacing-md: var(--ls-2);
+
+  /* ----- Spacing ----- */
+  --margin-bottom-sm: var(--s-1);
+  --margin-bottom-md: var(--s-2);
+  --margin-bottom-lg: var(--s-3);
+
+  --padding-sm: var(--s-1);
+  --padding-md: var(--s-2);
+  /* ----- Colors ----- */
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #fff;
+}
+
+/* ----- CSS UNIVERSAL ----- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: outfit, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--color-slate-300);
+}
+
+/* ----- CSS ----- */
+
+.qr-code-section {
+  max-width: 309px;
+  box-shadow: 0px 10px 10px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: var(--padding-sm);
+  background-color: var(--color-white);
+}
+
+.qr-code-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: var(--margin-bottom-sm);
+}
+
+.qr-code-heading {
+  font-size: var(--text-md);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  text-align: center;
+  margin-bottom: var(--margin-bottom-sm);
+  color: var(--color-slate-900);
+}
+
+.qr-code-paragraph {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-md);
+  text-align: center;
+  margin-bottom: var(--margin-bottom-md);
+  color: var(--color-slate-500);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
